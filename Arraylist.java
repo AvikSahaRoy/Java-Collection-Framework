@@ -69,7 +69,7 @@ class Arraylist {
 
         // ----------------------------------------------------------
         // Updated 
-	    ArrayList<Integer> codechef = new ArrayList<Integer>();
+	ArrayList<Integer> codechef = new ArrayList<Integer>();
         codechef.add(45);
         codechef.add(56);
         codechef.add(23);
@@ -86,6 +86,8 @@ class Arraylist {
         // Swap elements:---------------
         Collections.swap(codechef, 0, 2);
         System.out.println("ArrayList after swapping first and last elements: " + codechef); // [56, 45, 23]
+	// position of the element--------------------
+	System.out.println("position of the element: "+codechef.indexOf(45)); // 0
 
     }
 }
