@@ -67,5 +67,25 @@ class Arraylist {
         Collections.sort(num);
         System.out.println("Sorted ArrayList is: "+num);
 
+        // ----------------------------------------------------------
+        // Updated 
+	    ArrayList<Integer> codechef = new ArrayList<Integer>();
+        codechef.add(45);
+        codechef.add(56);
+        codechef.add(23);
+        System.out.println("Created ArrayList: " + codechef); // [45, 56, 23]
+        // Sorted ArrayList --------
+        Collections.sort(codechef);
+        System.out.println("Sorted ArrayList: " + codechef); // [23, 45, 56]
+        // "Highest value in the ArrayList ------------
+        System.out.println("Highest value in the ArrayList: " + Collections.max(codechef)); // 56
+        // Lowest value in the ArrayList -----------
+        System.out.println("Lowest value in the ArrayList: " + Collections.min(codechef)); // 23
+        // Frequency of a value/element: -----------
+        System.out.println("occurrence of 23 in the ArrayList: "+ Collections.frequency(codechef, 23)); // 1
+        // Swap elements:---------------
+        Collections.swap(codechef, 0, 2);
+        System.out.println("ArrayList after swapping first and last elements: " + codechef); // [56, 45, 23]
+
     }
 }
